@@ -1,4 +1,5 @@
 # Amazon-Sales-Dataset
+![Amazon Sales Dataset](Overview.png)
 Data source
 
 https://www.kaggle.com/datasets/rohiteng/amazon-sales-dataset/code
