@@ -1,5 +1,5 @@
 # Amazon-Sales-Dataset
-![Amazon Sales](Overview Page.png)
+![Amazon Sales](Overview%20Page.png)
 
 
 
