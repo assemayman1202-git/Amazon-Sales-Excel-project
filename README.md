@@ -1,60 +1,141 @@
-# Amazon-Sales-Dataset
-![Amazon Sales](Overview%20Page.png)
+# 🛒 Amazon Sales Excel Dashboard
 
+> An end-to-end interactive Excel dashboard analyzing Amazon sales performance across customers, products, and categories — built with Pivot Tables, dynamic Charts, and advanced Excel formulas on a structured sales dataset.
 
+![Tool](https://img.shields.io/badge/Tool-Microsoft%20Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
+![Technique](https://img.shields.io/badge/Technique-Pivot%20Tables-0078D4?style=flat-square&logo=microsoft&logoColor=white)
+![Technique](https://img.shields.io/badge/Technique-Charts%20%26%20Formulas-FF6F00?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-2ea44f?style=flat-square)
 
+-----
 
+## 📌 Table of Contents
 
-Data source
+- [📁 Repository Structure](#-repository-structure)
+- [📊 Dashboard Pages](#-dashboard-pages)
+- [🗃️ Dataset Overview](#️-dataset-overview)
+- [🛠️ Excel Features Used](#️-excel-features-used)
+- [💡 Key Insights](#-key-insights)
+- [🚀 Strategic Recommendations](#-strategic-recommendations)
+- [⚡ Getting Started](#-getting-started)
 
-https://www.kaggle.com/datasets/rohiteng/amazon-sales-dataset/code
+-----
 
-This Excel-based dashboard analyzes 100,000 Amazon orders from 43,233 unique customers across 2020-2024, revealing critical patterns in revenue performance, customer retention, and operational efficiency through interactive pivot tables, slicers, and visualizations.
+## 📁 Repository Structure
+Amazon-Sales-Excel-project/
+│
+├── 🖼️  Overview Page.png             # Dashboard – Overview page
+├── 🖼️  Customers Page.png            # Dashboard – Customers page
+├── 🖼️  Product&Category Page.png     # Dashboard – Products & Categories page
+│
+└── 📄 README.md                      # Project documentation
 
-Key Performance Metrics: Total revenue of $91.02M with 99.12% recognition rate, total sales amount of $91.83M, average revenue per customer of $918.26, $6.85M in taxes (7.46%), $740.67K in shipping costs (0.81%), and minimal discounts of $7,422. The analysis covers 50 products across 6 categories, 13 brands, and 21 U.S. cities.
+-----
 
-Interactive Features: Year slicer (2020-2024), category and brand filters, payment method selector, and month filter enable dynamic analysis across multiple dimensions for actionable decision-making.
+## 📊 Dashboard Pages
 
-Customer Intelligence: The dashboard tracks 100,000 total orders from 43,233 unique customers with a true repeat customer rate of 61.35% (26,527 customers).
+### 🔍 1. Overview Page
 
-Retention improved dramatically from 33% in 2021 to 80% in 2024—a 247% improvement demonstrating exceptional loyalty growth driven by better product quality, improved customer service, and effective loyalty programs. However, 38.65% remain one-time customers (16,706), representing a $7.67M recovery opportunity.
+High-level KPIs for the entire Amazon sales operation — total revenue, total orders, average order value, and overall profit margin with trend analysis over time.
 
-Revenue Drivers: Electronics dominates with 55% of revenue ($50M), followed by Home & Kitchen (15.4%). 
-Top products include
-•	Memory Card 128GB ($1.94M)
-•	LED Desk Lamp ($1.93M)
-•	Mechanical Keyboard ($1.89M)
-Leading brands 
-•	Apex ($20M+) 
-•	Urban Style ($18M+)
-•	Home Ease ($16M+)
-All drive significant sales.
+![Overview Page](Overview%20Page.png)
 
-Geographic Performance: Texas leads with $22.67M (24.7% of revenue).
+-----
 
-Operational Insights: Payment preferences show Credit Card (34.98%), Net Banking (20.19%), and Debit Card (19.29%) as top methods.
+### 👥 2. Customers Page
 
-Delivery status reveals 74.63% successfully delivered, but a concerning 15.19% return rate (above 8-10% industry benchmark) costing $13.94M at risk, likely due to product quality issues, incorrect descriptions, and size/fit problems in Clothing.
+Customer-focused analysis — top buyers by revenue, order frequency, geographic distribution, and new vs. returning customer breakdown.
 
-Sales peak on Mondays ($13.3M) with February consistently showing the lowest monthly revenue (~$6.9M vs $7.59M average), representing a $690K monthly gap ($3.45M over 5 years) caused by post-holiday spending fatigue, shortest month effect, seasonal product mismatch, and underutilized Valentine's Day opportunity.
+![Customers Page](Customers%20Page.png)
 
-Critical Challenges & Root Causes:
-•	One-Time Customer Problem: 16,706 customers never returned due to low first purchase value (<$50), one-time-use products (Books), and recent 2024 customers needing nurturing
-•	February Revenue Decline: Post-holiday fatigue, 7-10% fewer shopping days, winter-to-spring product gap, and lack of shopping occasions
-•	Electronics Over-Concentration: 55% dependency creates vulnerability to market downturns and single-category risk
+-----
 
-Strategic Recommendations:
-Immediate Actions (0-3 Months):
-1.	Address February Gap: Launch February Flash Sale (20% off Electronics), Valentine's Day gift guides targeting tech lovers, and "We Miss You" campaign for Dec/Jan customers—Expected recovery: $350K+ in February revenue
-2.	Win Back One-Time Customers: Three-tiered approach targeting recent 2024 buyers (15% recovery = $688K), low-value customers with 25% off + free shipping (10% recovery = $615K), and Books buyers with monthly newsletters (5% recovery = $229K)—Total potential: $1.53M annually
-3.	Optimize Top 10 Products: Never stock out Memory Card 128GB, bundle complementary products (Memory Card + Card Reader), and implement upselling at checkout—Expected impact: +5% AOV = +$4.55M annually
-   
-Short-Term Actions (3-6 Months): 
+### 📦 3. Product & Category Page
 
-5. Category Expansion: Add 15-20 smart home products in Electronics, revitalize Home & Kitchen with trending items (air fryers), expand activewear in Clothing, and grow Sports & Outdoors with camping gear—reduces single-category dependency risk
-6. Reduce Return Rate: Conduct root cause analysis by category, improve size charts and product photos for Clothing, enhance packaging for fragile items, and implement pre-shipment quality inspections—Target: reduce to 10%, saving $4.7M annually
- 
-Long-Term Actions (6-12 Months):
+Product and category performance — best-selling items, revenue by category, profit margin per product line, and low-performing SKUs.
 
-7. Geographic Expansion: Target Texas with state-specific campaigns (+$10M), Florida with seasonal product focus (+$5M), and New York with premium product lines (+$8M)—Expected total: +$23M from geographic expansion
-8. International Development: Focus Year 1 on UK market with localized descriptions and faster delivery partnerships
+![Product & Category Page](Product%26Category%20Page.png)
+
+-----
+
+## 🗃️ Dataset Overview
+
+The Amazon Sales dataset contains transactional records covering:
+
+|📋 Field           |📝 Description                               |
+|------------------|--------------------------------------------|
+|`Order ID`        |Unique identifier for each sales transaction|
+|`Order Date`      |Date the order was placed                   |
+|`Customer Name`   |Name of the purchasing customer             |
+|`Region / Country`|Geographic location of the customer         |
+|`Product Name`    |Name of the product sold                    |
+|`Category`        |Product category classification             |
+|`Quantity`        |Number of units ordered                     |
+|`Unit Price`      |Price per unit                              |
+|`Total Revenue`   |Quantity × Unit Price                       |
+|`Profit`          |Revenue minus cost                          |
+|`Profit Margin`   |Profit as a percentage of revenue           |
+
+-----
+
+## 🛠️ Excel Features Used
+
+|⚙️ Feature                   |📝 Purpose                                                     |
+|----------------------------|--------------------------------------------------------------|
+|📊 Pivot Tables          |Summarizing sales by region, category, customer & time period |
+|📈 Charts                |Visual representation of trends, rankings & distributions     |
+|🔢 Formulas              |KPI calculations — SUMIF, COUNTIF, IF, VLOOKUP, `TEXT`|
+|🎛️ Slicers               |Interactive filtering by date, region, and category           |
+|🎨 **Conditional Formatting**|Highlighting top performers and outliers                      |
+
+-----
+
+## 💡 Key Insights
+
+> 📌 Findings derived from cross-page analysis of the dashboard
+
+- 💰 Revenue Concentration — A small group of top customers contributes the majority of total revenue, following an 80/20 pattern across the customer base.
+- - 📅 Seasonal Demand — Sales volume spikes notably during Q4, driven by holiday shopping behavior and promotional periods.
+- 🏆 Category Leaders — A few product categories dominate total revenue, while others show high order volume but low profit margins.
+- 🌍 Geographic Skew — Certain regions generate disproportionately high revenue, while others remain largely untapped.
+- 📦 Low-Margin Products — Several products consistently sell well in volume but contribute minimally to profit, signaling a pricing or cost issue.
+- 👥 Customer Retention Gap — A significant share of revenue comes from one-time buyers, highlighting a retention and repeat-purchase opportunity.
+
+-----
+
+## 🚀 Strategic Recommendations
+
+> 🎯 Action items based on dashboard insights
+
+|#|🎯 Recommendation                   |📝 Details                                                                                                       |
+|-|-----------------------------------|----------------------------------------------------------------------------------------------------------------|
+|1|💎 Reward Top Customers         |Introduce a VIP or loyalty tier for the top 20% of buyers to reduce churn and increase lifetime value           |
+|2|📦 Review Low-Margin Products   |Reprice or bundle low-margin items to improve profitability without sacrificing volume                          |
+|3|🌍 Target Underserved Regions   |Launch region-specific campaigns in areas with low penetration but high demographic potential                   |
+|4|📅 Capitalize on Seasonality    |Pre-stock high-demand categories before Q4 peaks; use early-bird promotions to smooth demand across Q1/Q2       |
+|5|🔁 Boost Repeat Purchases       |Implement post-purchase email flows and product recommendations to convert one-time buyers into repeat customers|
+|6|🏆 **Double Down on Top Categories**|Allocate more marketing spend to the highest-revenue categories and expand product depth within them            |
+
+-----
+
+## ⚡ Getting Started
+1. Clone or download the repository
+   → git clone https://github.com/assemayman1202-git/Amazon-Sales-Excel-project.git
+
+2. Open the Excel dashboard file in Microsoft Excel (2016 or later recommended)
+
+3. Use the Slicers to filter by date range, region, or category
+
+4. Navigate across the 3 dashboard tabs:
+   → Overview → Customers → Product & Category
+
+-----
+
+## 👤 Author
+
+Assem Ayman
+[![GitHub](https://img.shields.io/badge/GitHub-assemayman1202--git-181717?style=flat-square&logo=github)](https://github.com/assemayman1202-git)
+
+-----
+
+*⭐ If you found this project useful, consider giving it a star!*
